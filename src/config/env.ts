@@ -28,7 +28,7 @@ export const env = {
   BLUESKY_IDENTIFIER: getRequiredEnv('BLUESKY_IDENTIFIER'),
   BLUESKY_PASSWORD: getRequiredEnv('BLUESKY_PASSWORD'),
   OPENAI_API_KEY: getRequiredEnv('OPENAI_API_KEY'),
-  POST_CRON_SCHEDULE: process.env.POST_CRON_SCHEDULE || '0 */2 * * *',
+  POST_CRON_SCHEDULE: process.env.POST_CRON_SCHEDULE || '*/2 * * * *',
   MENTION_CRON_SCHEDULE: process.env.MENTION_CRON_SCHEDULE || '*/5 * * * *',
   OPENAI_MODEL: process.env.OPENAI_MODEL || 'gpt-4o-mini',
   POST_TOPICS: process.env.POST_TOPICS || 'AI development, software engineering, developer productivity, programming careers, web3 trends',
