@@ -83,7 +83,7 @@ export async function generatePost() {
   console.log('Adding post to postedSet and saving', { text })
   postedSet.add(text)
   console.log('Updated postedSet', postedSet)
-  await savePostedPosts(postedSet)
+  // await savePostedPosts(postedSet)
 
   return trimToLength(text, MAX_POST_LENGTH)
 }
