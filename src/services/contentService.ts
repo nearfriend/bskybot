@@ -22,12 +22,17 @@ function trimToLength(text: string, maxLength: number) {
 }
 
 async function loadPosts() {
+
+  console.log('cachedPosts', cachedPosts)
+  console.log('postsJsonPath', postsJsonPath)
   if (cachedPosts) {
     return cachedPosts
   }
 
   const file = await fs.readFile(postsJsonPath, 'utf-8')
   cachedPosts = JSON.parse(file) as PostEntry[]
+
+  console.log('Loaded posts from posts.json', { count: cachedPosts.length })
   return cachedPosts
 }
 
