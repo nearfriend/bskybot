@@ -10,7 +10,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "src/postedJpostedPosts.json"
+      "src/postedPosts.json"
     ]
   },
   "dependencies": {

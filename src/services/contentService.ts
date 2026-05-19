@@ -61,7 +61,6 @@ export async function generatePost() {
   }
 
   const postedSet = await loadPostedPosts()
-  console.log('postedSet', postedSet)
   const unusedPosts = posts.filter((post) => {
     const text = `${post.title}: ${post.content}`
     return !postedSet.has(text)
@@ -72,17 +71,13 @@ export async function generatePost() {
   }
 
   const selected = pickRandom(unusedPosts)
-  console.log('selected', selected)
   const text = `${selected.title}: ${selected.content}`
   console.log('Generated post text', { text })
   const safe = await isTextSafe(text)
   if (!safe) {
     throw new Error('Post content failed moderation checks')
   }
-  console.log('Post content passed moderation checks')
-  console.log('Adding post to postedSet and saving', { text })
   postedSet.add(text)
-  console.log('Updated postedSet', postedSet)
   await savePostedPosts(postedSet)
 
   return trimToLength(text, MAX_POST_LENGTH)
