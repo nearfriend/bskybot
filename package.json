@@ -8,6 +8,11 @@
     "build": "tsc",
     "start": "node dist/index.js"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "src/postedJpostedPosts.json"
+    ]
+  },
   "dependencies": {
     "@atproto/api": "^0.6.7",
     "dotenv": "^16.4.0",
