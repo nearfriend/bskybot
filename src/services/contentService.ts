@@ -66,7 +66,6 @@ export async function generatePost() {
     const text = `${post.title}: ${post.content}`
     return !postedSet.has(text)
   })
-  console.log('unusedPosts', unusedPosts)
 
   if (!unusedPosts.length) {
     throw new Error('All posts in posts.json have already been published')
