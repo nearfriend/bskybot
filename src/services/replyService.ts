@@ -25,11 +25,11 @@ export async function replyToRandomTimelinePost() {
   const text = await generateReply(target.authorHandle || 'there')
   const imageUrl = randomChance(env.IMAGE_CHANCE) ? pickRandomImageUrl() : undefined
 
-  await replyToPost({
-    text,
-    ...references,
-    imageUrl
-  })
+  // await replyToPost({
+  //   text,
+  //   ...references,
+  //   imageUrl
+  // })
 
   logger.info({ uri: target.uri, cid: target.cid, text, imageUrl }, 'Reply posted to timeline post')
 }
