@@ -1,9 +1,17 @@
-import { openai } from '../ai/openai'
-import { buildPostPrompt, buildReplyPrompt } from '../ai/prompts'
-import { defaultPostTopics, MAX_POST_LENGTH } from '../config/constants'
-import { env } from '../config/env'
+import { promises as fs } from 'fs'
+import path from 'path'
+import { MAX_POST_LENGTH } from '../config/constants'
 import { pickRandom } from '../utils/random'
 import { isTextSafe } from './moderationService'
+
+type PostEntry = {
+  title: string
+  content: string
+}
+
+const postsJsonPath = path.resolve(process.cwd(), 'src', 'posts.json')
+const postedPostsPath = path.resolve(process.cwd(), 'src', 'postedPosts.json')
+let cachedPosts: PostEntry[] | null = null
 
 function trimToLength(text: string, maxLength: number) {
   const trimmed = text.trim()
@@ -13,43 +21,63 @@ function trimToLength(text: string, maxLength: number) {
   return trimmed.slice(0, maxLength).replace(/\s+$/u, '')
 }
 
-export async function generatePost(topic?: string) {
-  const chosenTopic = topic || pickRandom(defaultPostTopics)
-  const completion = await openai.chat.completions.create({
-    model: env.OPENAI_MODEL,
-    messages: [
-      {
-        role: 'user',
-        content: buildPostPrompt(chosenTopic)
-      }
-    ]
-  })
-
-  const content = completion.choices[0].message?.content?.trim() || ''
-  const safe = await isTextSafe(content)
-  if (!safe) {
-    throw new Error('Generated post failed moderation checks')
+async function loadPosts() {
+  if (cachedPosts) {
+    return cachedPosts
   }
 
-  return trimToLength(content, MAX_POST_LENGTH)
+  const file = await fs.readFile(postsJsonPath, 'utf-8')
+  cachedPosts = JSON.parse(file) as PostEntry[]
+  return cachedPosts
+}
+
+async function loadPostedPosts() {
+  try {
+    const file = await fs.readFile(postedPostsPath, 'utf-8')
+    const items = JSON.parse(file) as string[]
+    return new Set(items)
+  } catch (error: any) {
+    if (error.code === 'ENOENT') {
+      return new Set<string>()
+    }
+    throw error
+  }
+}
+
+async function savePostedPosts(postedSet: Set<string>) {
+  const items = Array.from(postedSet)
+  await fs.writeFile(postedPostsPath, JSON.stringify(items, null, 2), 'utf-8')
+}
+
+export async function generatePost() {
+  const posts = await loadPosts()
+  if (!posts.length) {
+    throw new Error('No posts available in posts.json')
+  }
+
+  const postedSet = await loadPostedPosts()
+  const unusedPosts = posts.filter((post) => {
+    const text = `${post.title}: ${post.content}`
+    return !postedSet.has(text)
+  })
+
+  if (!unusedPosts.length) {
+    throw new Error('All posts in posts.json have already been published')
+  }
+
+  const selected = pickRandom(unusedPosts)
+  const text = `${selected.title}: ${selected.content}`
+  const safe = await isTextSafe(text)
+  if (!safe) {
+    throw new Error('Post content failed moderation checks')
+  }
+
+  postedSet.add(text)
+  await savePostedPosts(postedSet)
+
+  return trimToLength(text, MAX_POST_LENGTH)
 }
 
 export async function generateReply(targetHandle: string) {
-  const completion = await openai.chat.completions.create({
-    model: env.OPENAI_MODEL,
-    messages: [
-      {
-        role: 'user',
-        content: buildReplyPrompt(targetHandle)
-      }
-    ]
-  })
-
-  const content = completion.choices[0].message?.content?.trim() || ''
-  const safe = await isTextSafe(content)
-  if (!safe) {
-    throw new Error('Generated reply failed moderation checks')
-  }
-
-  return trimToLength(content, MAX_POST_LENGTH)
+  throw new Error('Reply generation is disabled for this bot')
 }
