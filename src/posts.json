@@ -1,274 +1,286 @@
 [
   {
-    "title": "AI in Smart Healthcare",
-    "content": "AI technologies help hospitals improve diagnostics, automate medical workflows, and analyze patient data more efficiently. Healthcare providers use machine learning systems to support treatment planning, increase operational accuracy, and enhance overall patient care experiences."
+    "title": "Finding Japanese Friends Online",
+    "content": "Online platforms make it easy to connect with Japanese friends, practice language skills, and build friendships through shared hobbies and cultural exchange."
   },
   {
-    "title": "AI for Business Automation",
-    "content": "Businesses use AI automation tools to streamline repetitive workflows, manage operations, and improve productivity across departments. Intelligent systems reduce manual tasks, optimize efficiency, and help organizations focus on strategic growth and innovation initiatives."
+    "title": "React Component Architecture",
+    "content": "React applications are built using reusable components that help structure the UI into modular pieces. Good component design improves maintainability, scalability, and reusability across large fullstack projects."
   },
   {
-    "title": "AI in Education",
-    "content": "Educational platforms integrate AI systems to personalize learning experiences, recommend study materials, and automate grading processes. AI-powered tools help students learn more effectively while supporting teachers with data-driven educational insights."
+    "title": "Node.js Event Loop Explained",
+    "content": "The Node.js event loop handles asynchronous operations efficiently, allowing non-blocking execution. This makes Node ideal for APIs, real-time apps, and high-performance backend systems in fullstack development."
   },
   {
-    "title": "AI in Cybersecurity",
-    "content": "Cybersecurity companies use AI to detect threats, monitor suspicious activity, and strengthen digital infrastructure in real time. Machine learning systems improve response speed, reduce security risks, and support advanced protection against evolving cyberattacks."
+    "title": "TypeScript Interfaces in Practice",
+    "content": "TypeScript interfaces define object shapes and improve type safety across frontend and backend code. They reduce runtime errors and make large fullstack codebases easier to maintain."
   },
   {
-    "title": "AI and Robotics",
-    "content": "AI-powered robots assist industries with manufacturing, logistics, and automation tasks that require speed and precision. Intelligent robotic systems improve operational efficiency, reduce human error, and support advanced industrial transformation worldwide."
+    "title": "React Hooks Deep Dive",
+    "content": "React hooks like useState and useEffect allow functional components to manage state and lifecycle logic. They simplify development and reduce reliance on class components."
   },
   {
-    "title": "AI in Finance",
-    "content": "Financial institutions use AI systems for fraud detection, risk assessment, and automated customer support services. Artificial intelligence improves data analysis, supports investment decisions, and increases operational efficiency across global financial markets."
+    "title": "Express.js Middleware System",
+    "content": "Express middleware functions process requests before they reach route handlers. They are used for authentication, logging, error handling, and request parsing in Node.js applications."
   },
   {
-    "title": "AI for Content Creation",
-    "content": "Content creators use AI tools to generate articles, graphics, and videos more efficiently across digital platforms. AI-powered creativity systems reduce production time, improve workflow automation, and support innovative media development strategies."
+    "title": "Fullstack Authentication Flow",
+    "content": "Authentication in fullstack apps often uses JWT or sessions to verify users. It ensures secure access to APIs and protects sensitive application data across frontend and backend systems."
   },
   {
-    "title": "AI in Mobile Applications",
-    "content": "Mobile applications integrate AI for predictive recommendations, voice recognition, and personalized user experiences. Intelligent app features improve engagement, optimize usability, and provide smarter digital interactions for modern mobile users."
+    "title": "MongoDB Schema Design",
+    "content": "MongoDB uses flexible document schemas, but proper schema design is still important for performance and scalability in fullstack applications."
   },
   {
-    "title": "AI in Transportation",
-    "content": "Transportation systems use AI to optimize traffic management, improve route planning, and support autonomous driving technologies. Intelligent analytics increase operational safety, reduce delays, and enhance overall transportation efficiency in urban environments."
+    "title": "React State vs Props",
+    "content": "State is internal component data while props are external inputs passed from parent components. Understanding both is essential for building dynamic React applications."
   },
   {
-    "title": "AI and Cloud Computing",
-    "content": "Cloud platforms integrate AI services to provide scalable machine learning solutions for businesses worldwide. AI-powered cloud systems accelerate digital transformation, improve data processing, and simplify the deployment of intelligent applications."
+    "title": "REST API Best Practices",
+    "content": "REST APIs should follow consistent naming, proper HTTP methods, and clear response structures. This improves maintainability and integration between frontend and backend systems."
   },
   {
-    "title": "AI in Agriculture",
-    "content": "Farmers use AI technologies to monitor crop health, optimize irrigation systems, and predict agricultural yields more accurately. Smart farming solutions improve productivity, reduce resource waste, and support sustainable food production practices."
+    "title": "Frontend-Backend Communication",
+    "content": "Fullstack applications rely on APIs to connect frontend interfaces with backend services. Data is typically exchanged in JSON format over HTTP requests."
   },
   {
-    "title": "AI in Retail",
-    "content": "Retail companies use AI systems to analyze customer behavior, optimize inventory management, and improve personalized shopping experiences. Intelligent retail technologies increase operational efficiency and help businesses strengthen customer satisfaction."
+    "title": "React Performance Optimization",
+    "content": "Optimizing React apps involves memoization, lazy loading, and minimizing re-renders. These techniques improve speed and user experience in large applications."
   },
   {
-    "title": "AI in Marketing",
-    "content": "Marketing teams rely on AI to automate campaigns, analyze consumer trends, and improve audience targeting strategies. AI-driven insights help businesses increase engagement, optimize advertising performance, and improve conversion rates effectively."
+    "title": "Node.js File System Handling",
+    "content": "Node.js provides built-in modules for file system operations, allowing developers to read, write, and manage files efficiently in backend services."
   },
   {
-    "title": "AI and Virtual Assistants",
-    "content": "Virtual AI assistants help users manage schedules, answer questions, and automate daily digital tasks more efficiently. Intelligent assistants improve productivity, simplify communication, and provide personalized support across connected devices and applications."
+    "title": "TypeScript Generics",
+    "content": "Generics in TypeScript allow reusable and flexible type definitions. They are useful for creating functions and components that work with multiple data types safely."
   },
   {
-    "title": "AI in Gaming",
-    "content": "Game developers use AI to create intelligent NPCs, dynamic gameplay systems, and immersive virtual environments. AI-powered gaming technologies improve realism, increase player engagement, and enhance interactive entertainment experiences worldwide."
+    "title": "React Context API Usage",
+    "content": "Context API helps manage global state without prop drilling. It is useful for themes, authentication, and shared application data."
   },
   {
-    "title": "AI for Data Analytics",
-    "content": "Organizations use AI analytics tools to process large datasets, identify trends, and generate business insights quickly. Machine learning systems improve forecasting accuracy, optimize reporting workflows, and support data-driven strategic planning decisions."
+    "title": "Building REST APIs with Express",
+    "content": "Express.js simplifies API development by providing routing and middleware support. It is widely used for building backend services in fullstack applications."
   },
   {
-    "title": "AI in Logistics",
-    "content": "Logistics companies use AI to optimize delivery routes, manage inventory systems, and improve supply chain efficiency. Intelligent automation technologies reduce operational costs, increase delivery accuracy, and support global logistics performance improvements."
+    "title": "Database Indexing in MongoDB",
+    "content": "Indexing improves query performance by allowing faster data retrieval. It is essential for optimizing large-scale fullstack applications."
   },
   {
-    "title": "AI and Smart Cities",
-    "content": "Smart cities use AI systems to optimize traffic flow, manage energy usage, and improve public infrastructure services. Intelligent urban technologies enhance sustainability, reduce operational inefficiencies, and improve quality of life for residents."
+    "title": "React Router Navigation",
+    "content": "React Router enables navigation between different pages in single-page applications without full page reloads, improving user experience."
   },
   {
-    "title": "AI in Human Resources",
-    "content": "HR departments use AI to analyze resumes, improve hiring processes, and monitor employee engagement effectively. Intelligent workforce systems help organizations identify talent, optimize recruitment strategies, and support employee development initiatives."
+    "title": "Error Handling in Node.js",
+    "content": "Proper error handling ensures backend stability. Try-catch blocks, middleware, and logging systems help manage runtime issues effectively."
   },
   {
-    "title": "AI in Entertainment",
-    "content": "Entertainment companies use AI to recommend content, analyze audience preferences, and automate media production workflows. AI-driven systems improve personalization, support creative development, and enhance digital entertainment experiences globally."
+    "title": "JWT Authentication Flow",
+    "content": "JWT tokens are used to securely authenticate users in fullstack apps. They are stored on the client and verified by the server for each request."
   },
   {
-    "title": "AI in Manufacturing",
-    "content": "Manufacturing industries use AI for predictive maintenance, automated quality control, and smart production management. Intelligent factory systems improve efficiency, reduce downtime, and support advanced industrial automation across production facilities."
+    "title": "API Rate Limiting",
+    "content": "Rate limiting prevents abuse of APIs by restricting the number of requests a user can make in a given time period, improving backend stability."
   },
   {
-    "title": "AI in E-Commerce",
-    "content": "E-commerce businesses use AI to personalize recommendations, optimize pricing strategies, and improve customer interactions online. Intelligent shopping systems increase sales opportunities, enhance user experiences, and support data-driven retail operations."
+    "title": "React Form Handling",
+    "content": "Forms in React can be managed using controlled components, allowing developers to track input state and validate user data efficiently."
   },
   {
-    "title": "AI in Real Estate",
-    "content": "Real estate companies use AI to analyze property values, predict market trends, and improve customer recommendations. Intelligent analytics systems help investors make informed decisions and optimize property management operations effectively."
+    "title": "Node.js Async/Await",
+    "content": "Async/await simplifies asynchronous programming in Node.js, making code more readable and easier to manage compared to callback patterns."
   },
   {
-    "title": "AI and Sustainability",
-    "content": "Technology companies develop sustainable AI systems that reduce energy consumption and support environmentally responsible innovation. Green AI initiatives focus on optimizing efficiency while minimizing the environmental impact of advanced computing technologies."
+    "title": "TypeScript Type Aliases",
+    "content": "Type aliases allow developers to define custom types for better readability and maintainability in complex fullstack applications."
   },
   {
-    "title": "AI in Healthcare Research",
-    "content": "Researchers use AI to analyze medical datasets, identify disease patterns, and accelerate drug discovery processes efficiently. Intelligent healthcare systems improve scientific research capabilities and support faster medical innovation across global institutions."
+    "title": "Deploying React Apps",
+    "content": "React applications can be deployed using platforms like Vercel or Netlify, providing fast and scalable hosting solutions for frontend projects."
   },
   {
-    "title": "AI in Social Media",
-    "content": "Social media platforms use AI to recommend content, detect harmful activity, and analyze user engagement trends. Intelligent moderation systems improve online experiences while helping platforms optimize personalized digital interactions effectively."
+    "title": "Docker for Fullstack Apps",
+    "content": "Docker allows developers to containerize fullstack applications, ensuring consistent environments across development and production."
   },
   {
-    "title": "AI and Natural Language Processing",
-    "content": "Natural language processing enables AI systems to understand, generate, and interpret human language efficiently. NLP technologies power chatbots, translation tools, and virtual assistants that improve communication across digital platforms worldwide."
+    "title": "CI/CD Pipelines",
+    "content": "Continuous integration and deployment pipelines automate testing and deployment processes, improving development speed and reliability."
   },
   {
-    "title": "AI in Smart Homes",
-    "content": "Smart home devices use AI to automate lighting, energy management, and security systems for improved convenience. Intelligent home technologies optimize daily routines, increase efficiency, and create personalized living experiences for users."
+    "title": "GraphQL vs REST",
+    "content": "GraphQL allows flexible data queries, while REST uses fixed endpoints. Both are widely used in fullstack architectures depending on project needs."
   },
   {
-    "title": "AI and Autonomous Vehicles",
-    "content": "Autonomous vehicles rely on AI to detect obstacles, analyze traffic conditions, and make real-time driving decisions. Intelligent transportation technologies improve road safety, optimize navigation systems, and support the future of mobility innovation."
+    "title": "WebSockets in Real-Time Apps",
+    "content": "WebSockets enable real-time communication between client and server, commonly used in chat apps and live dashboards."
   },
   {
-    "title": "AI in Biotechnology",
-    "content": "Biotechnology companies use AI to accelerate genetic analysis, medical research, and drug development initiatives globally. Intelligent systems improve scientific accuracy, support innovation, and enhance efficiency across biotechnology research operations."
+    "title": "Redux State Management",
+    "content": "Redux helps manage complex application state in large React apps by centralizing data and providing predictable state updates."
   },
   {
-    "title": "AI in Video Production",
-    "content": "Video creators use AI-powered editing tools to automate subtitles, transitions, and visual enhancements more efficiently. Intelligent production systems reduce editing time and improve content quality across digital media platforms worldwide."
+    "title": "Fullstack Project Structure",
+    "content": "A well-structured fullstack project separates frontend, backend, and shared logic to improve scalability and maintainability."
   },
   {
-    "title": "AI and Edge Computing",
-    "content": "Edge AI processes data directly on connected devices instead of centralized cloud servers for faster responses. Intelligent edge computing systems reduce latency, improve real-time performance, and support advanced smart device operations."
+    "title": "React Performance Optimization Techniques",
+    "content": "React performance can be improved using memoization, lazy loading, and avoiding unnecessary re-renders. These techniques help build faster and more scalable frontend applications in fullstack systems."
   },
   {
-    "title": "AI in Recruitment",
-    "content": "Recruitment platforms use AI systems to analyze candidate profiles, automate hiring workflows, and improve talent matching. Intelligent recruitment technologies help businesses identify qualified candidates faster and optimize hiring efficiency."
+    "title": "Node.js Scalability Patterns",
+    "content": "Node.js scales effectively using clustering, load balancing, and microservices architecture. These patterns allow backend systems to handle large amounts of traffic efficiently."
   },
   {
-    "title": "AI and Predictive Analytics",
-    "content": "Predictive analytics powered by AI helps businesses forecast trends, identify risks, and improve strategic planning processes. Intelligent forecasting systems analyze historical data efficiently to support faster and more accurate decision-making."
+    "title": "TypeScript in Large Projects",
+    "content": "TypeScript improves maintainability in large fullstack projects by enforcing type safety and reducing runtime errors across frontend and backend codebases."
   },
   {
-    "title": "AI in Music Production",
-    "content": "Musicians and producers use AI tools to generate melodies, enhance audio quality, and streamline music production workflows. Intelligent creative systems improve efficiency and expand artistic possibilities in modern digital music creation."
+    "title": "React Custom Hooks",
+    "content": "Custom hooks allow developers to reuse logic across React components. They improve code organization and reduce duplication in complex frontend applications."
   },
   {
-    "title": "AI in Scientific Research",
-    "content": "Scientists use AI systems to analyze complex datasets, identify hidden patterns, and accelerate research discoveries globally. Intelligent research technologies improve efficiency and support innovation across medicine, engineering, and environmental science."
+    "title": "Express.js Routing System",
+    "content": "Express routing defines how an application responds to different HTTP requests. It is a core concept in building REST APIs with Node.js."
   },
   {
-    "title": "AI in Customer Support",
-    "content": "Businesses use AI chatbots and virtual assistants to provide instant customer support services around the clock. Intelligent communication systems improve response times, reduce operational costs, and increase customer satisfaction levels effectively."
+    "title": "MongoDB Aggregation Framework",
+    "content": "MongoDB aggregation allows advanced data processing like filtering, grouping, and transforming data directly in the database layer."
   },
   {
-    "title": "AI in Smart Infrastructure",
-    "content": "Governments and organizations use AI to monitor infrastructure systems, optimize maintenance, and improve operational safety. Intelligent monitoring technologies increase efficiency and support sustainable development across modern urban environments."
+    "title": "JWT Security Best Practices",
+    "content": "JWT tokens should be securely stored and properly validated on the server to prevent unauthorized access in fullstack applications."
   },
   {
-    "title": "AI in Insurance",
-    "content": "Insurance companies use AI to automate claims processing, assess risks, and detect fraudulent activities more accurately. Intelligent systems improve operational speed, reduce costs, and enhance customer service experiences across the industry."
+    "title": "React Component Reusability",
+    "content": "Reusable components reduce development time and improve consistency across large frontend applications in fullstack systems."
   },
   {
-    "title": "AI and Quantum Computing",
-    "content": "Researchers explore AI and quantum computing to solve highly complex problems faster than traditional systems allow. Advanced computing technologies may revolutionize scientific research, optimization, and large-scale data processing capabilities worldwide."
+    "title": "Node.js Middleware Architecture",
+    "content": "Middleware functions in Node.js process requests in a pipeline, enabling modular and scalable backend logic."
   },
   {
-    "title": "AI in Sports Analytics",
-    "content": "Sports organizations use AI to analyze player performance, optimize training programs, and predict game outcomes effectively. Intelligent analytics systems improve strategic decision-making and help teams enhance performance across competitive sports environments."
+    "title": "API Versioning Strategies",
+    "content": "API versioning ensures backward compatibility when backend systems evolve, preventing frontend integration issues."
   },
   {
-    "title": "AI in Environmental Monitoring",
-    "content": "Environmental agencies use AI to monitor climate patterns, analyze pollution data, and predict natural disasters accurately. Intelligent environmental systems support sustainability efforts and improve global responses to ecological challenges worldwide."
+    "title": "TypeScript Utility Types",
+    "content": "Utility types like Partial, Pick, and Omit help developers manipulate types efficiently in complex applications."
   },
   {
-    "title": "AI and Digital Transformation",
-    "content": "Businesses integrate AI into digital transformation strategies to automate workflows, improve analytics, and optimize operations. Intelligent technologies increase organizational agility and support innovation across modern enterprise environments globally."
+    "title": "React Virtual DOM Explained",
+    "content": "The Virtual DOM improves performance by minimizing direct manipulation of the actual DOM in React applications."
   },
   {
-    "title": "AI in Food Technology",
-    "content": "Food technology companies use AI to improve production processes, monitor quality standards, and optimize supply chains efficiently. Intelligent systems increase operational productivity and support sustainable food manufacturing and distribution practices worldwide."
+    "title": "Fullstack Debugging Techniques",
+    "content": "Debugging fullstack applications requires inspecting frontend state, backend logs, and API responses together."
   },
   {
-    "title": "AI in Legal Technology",
-    "content": "Legal professionals use AI tools to review contracts, organize documents, and automate legal research processes efficiently. Intelligent legal systems reduce repetitive tasks, improve accuracy, and support faster decision-making within law firms and organizations."
+    "title": "REST API Error Handling",
+    "content": "Proper error handling in REST APIs improves reliability by returning consistent and meaningful error responses."
   },
   {
-    "title": "AI and Digital Security",
-    "content": "Digital security systems powered by AI monitor networks, identify vulnerabilities, and respond to cyber threats in real time. Intelligent protection technologies improve security performance and strengthen defense against advanced online attacks globally."
+    "title": "Node.js Streams",
+    "content": "Streams allow processing large data efficiently in Node.js without loading everything into memory at once."
   },
   {
-    "title": "AI in Drone Technology",
-    "content": "AI-powered drones perform autonomous navigation, aerial monitoring, and delivery operations with increased efficiency and accuracy. Intelligent drone systems improve safety, reduce operational costs, and support advanced commercial and industrial applications worldwide."
+    "title": "React Conditional Rendering",
+    "content": "Conditional rendering allows UI components to display different outputs based on application state."
   },
   {
-    "title": "AI and Voice Recognition",
-    "content": "Voice recognition technologies powered by AI improve communication between humans and digital systems across industries. Intelligent speech systems support virtual assistants, automated customer support, and real-time transcription services for users globally."
+    "title": "Database Relationships in MongoDB",
+    "content": "MongoDB uses embedding and referencing to manage relationships between data in NoSQL structures."
   },
   {
-    "title": "AI in Workplace Productivity",
-    "content": "Organizations use AI productivity tools to automate scheduling, manage projects, and improve team collaboration efficiently. Intelligent workplace systems reduce repetitive administrative work and help employees focus on strategic and creative responsibilities."
+    "title": "Authentication vs Authorization",
+    "content": "Authentication verifies user identity, while authorization determines access permissions in fullstack systems."
   },
   {
-    "title": "AI and Digital Creativity",
-    "content": "Artists, designers, and creators use AI tools to generate ideas, produce artwork, and explore innovative digital experiences. Intelligent creative technologies enhance productivity while expanding possibilities for modern visual and multimedia storytelling."
+    "title": "GraphQL Resolvers",
+    "content": "Resolvers define how GraphQL queries fetch data from databases or APIs in fullstack applications."
   },
   {
-    "title": "AI in Telecommunications",
-    "content": "Telecommunication companies use AI to optimize network performance, monitor connectivity, and improve customer experiences effectively. Intelligent communication systems increase operational reliability and support advanced digital infrastructure development globally."
+    "title": "React Suspense Feature",
+    "content": "Suspense allows React to handle asynchronous loading states more efficiently in modern applications."
   },
   {
-    "title": "AI and Personalized Learning",
-    "content": "Educational platforms use AI to customize lessons, analyze student progress, and improve digital learning experiences efficiently. Intelligent tutoring systems help learners study at their own pace while supporting academic performance and engagement."
+    "title": "Microservices Architecture",
+    "content": "Microservices break applications into smaller services that communicate independently, improving scalability and maintainability."
   },
   {
-    "title": "AI in Banking",
-    "content": "Banks use AI systems for fraud prevention, customer support automation, and financial risk analysis operations globally. Intelligent banking technologies improve transaction security, optimize operational efficiency, and enhance digital financial services for customers."
+    "title": "Docker Containers in Development",
+    "content": "Docker ensures consistent development environments by packaging applications and dependencies into containers."
   },
   {
-    "title": "AI in Energy Management",
-    "content": "Energy companies use AI to monitor consumption patterns, optimize power distribution, and improve infrastructure performance efficiently. Intelligent energy systems reduce waste, increase sustainability, and support smarter resource management across industries."
+    "title": "CI/CD Automation",
+    "content": "CI/CD pipelines automate testing and deployment processes, improving development speed and reliability."
   },
   {
-    "title": "AI and Real-Time Analytics",
-    "content": "Businesses use AI-driven real-time analytics to process information instantly and improve strategic decision-making operations. Intelligent systems identify trends quickly, optimize workflows, and support faster responses to changing market conditions globally."
+    "title": "React Redux Toolkit",
+    "content": "Redux Toolkit simplifies state management in React by reducing boilerplate and improving developer experience."
   },
   {
-    "title": "AI in Smart Transportation",
-    "content": "Smart transportation systems use AI to improve traffic flow, optimize public transit operations, and enhance road safety. Intelligent mobility technologies support efficient urban transportation and reduce congestion across rapidly growing cities worldwide."
+    "title": "WebSockets for Real-Time Apps",
+    "content": "WebSockets enable real-time communication between client and server for chat and live data applications."
   },
   {
-    "title": "AI in Media Production",
-    "content": "Media companies use AI to automate editing workflows, analyze audience preferences, and optimize digital content strategies. Intelligent production systems improve operational efficiency and support innovation in entertainment and broadcasting industries."
+    "title": "Fullstack Security Practices",
+    "content": "Security practices include input validation, authentication, encryption, and secure API design."
   },
   {
-    "title": "AI in Business Intelligence",
-    "content": "Organizations use AI-powered business intelligence platforms to analyze performance metrics and improve strategic planning. Intelligent analytics systems provide actionable insights that help companies increase productivity and optimize decision-making processes."
+    "title": "Server-Side Rendering with Next.js",
+    "content": "SSR improves performance and SEO by rendering pages on the server before sending them to the client."
   },
   {
-    "title": "AI and Human Collaboration",
-    "content": "Human-AI collaboration enables organizations to combine computational efficiency with human creativity and strategic thinking. Intelligent systems handle repetitive tasks while employees focus on leadership, innovation, and complex problem-solving responsibilities."
+    "title": "React State Management Patterns",
+    "content": "Different state management patterns help handle complexity in large-scale frontend applications."
   },
   {
-    "title": "AI in Retail Automation",
-    "content": "Retail automation powered by AI improves inventory tracking, customer support, and checkout processes within modern stores. Intelligent retail systems increase efficiency, reduce operational costs, and enhance shopping experiences for consumers worldwide."
+    "title": "Node.js Performance Tuning",
+    "content": "Performance tuning involves optimizing event loops, memory usage, and request handling in Node.js."
   },
   {
-    "title": "AI in Healthcare Diagnostics",
-    "content": "Healthcare providers use AI diagnostics tools to analyze medical images, detect diseases, and improve treatment planning accuracy. Intelligent healthcare technologies support faster diagnoses and enhance patient outcomes across modern medical institutions."
+    "title": "Fullstack Architecture Design",
+    "content": "Good architecture separates concerns between frontend, backend, and database layers for scalability."
   },
   {
-    "title": "AI and Smart Devices",
-    "content": "Smart devices use AI technologies to automate tasks, personalize experiences, and improve digital connectivity for users globally. Intelligent consumer electronics increase convenience and support seamless interactions across connected technological ecosystems."
+    "title": "React Lifecycle Concepts",
+    "content": "React lifecycle methods define how components behave during mounting, updating, and unmounting phases."
   },
   {
-    "title": "AI in Logistics Optimization",
-    "content": "Logistics companies use AI to forecast demand, optimize warehouse operations, and improve delivery management systems effectively. Intelligent supply chain technologies reduce operational delays and support more efficient global transportation networks."
+    "title": "API Security Best Practices",
+    "content": "Securing APIs involves authentication, rate limiting, and input validation to prevent attacks."
   },
   {
-    "title": "AI in Online Learning",
-    "content": "Online learning platforms integrate AI tools to personalize educational content, automate assessments, and support student engagement. Intelligent education systems improve accessibility and help learners achieve academic goals more efficiently worldwide."
+    "title": "TypeScript Enums Usage",
+    "content": "Enums help define named constants, improving code readability and maintainability in applications."
   },
   {
-    "title": "AI in Industrial Automation",
-    "content": "Industrial automation systems powered by AI optimize manufacturing operations, monitor machinery, and improve production quality standards. Intelligent factories increase efficiency, reduce maintenance costs, and support advanced technological transformation globally."
+    "title": "MongoDB Performance Optimization",
+    "content": "Indexing and query optimization improve MongoDB performance in large-scale applications."
   },
   {
-    "title": "AI and Speech Technology",
-    "content": "Speech technologies powered by AI improve voice assistants, transcription services, and multilingual communication platforms globally. Intelligent language systems enhance accessibility and support more natural interactions between humans and digital technologies."
+    "title": "React Forms Validation",
+    "content": "Form validation ensures correct user input and improves data quality in frontend applications."
   },
   {
-    "title": "AI in Autonomous Systems",
-    "content": "Autonomous systems powered by AI operate independently to perform navigation, monitoring, and decision-making tasks efficiently. Intelligent technologies improve automation capabilities across transportation, robotics, logistics, and industrial applications worldwide."
+    "title": "Node.js Cluster Module",
+    "content": "Cluster module enables Node.js to use multiple CPU cores for better performance."
   },
   {
-    "title": "AI and Future Innovation",
-    "content": "AI continues driving innovation across industries by improving automation, accelerating research, and enhancing digital experiences globally. Intelligent systems are expected to reshape productivity, communication, and technological advancement in the coming years."
+    "title": "Fullstack API Integration",
+    "content": "API integration connects frontend applications with backend services for data exchange."
+  },
+  {
+    "title": "GraphQL vs REST Comparison",
+    "content": "GraphQL provides flexible queries while REST uses structured endpoints for data communication."
+  },
+  {
+    "title": "React Performance Hooks",
+    "content": "Hooks like useMemo and useCallback improve performance by preventing unnecessary computations."
+  },
+  {
+    "title": "Fullstack Deployment Pipeline",
+    "content": "Deployment pipelines automate build, test, and release processes for fullstack applications."
   }
 ]
