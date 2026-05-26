@@ -1,5 +1,7 @@
-import { fetchRandomTimelinePost, resolveReplyReferences, replyToPost, pickRandomImageUrl } from '../bluesky/replies'
+import { fetchRandomTimelinePost, resolveReplyReferences, replyToPost } from '../bluesky/replies'
 import { generateReply } from './contentService'
+import { generateImage } from '../ai/openai'
+import { buildReplyImagePrompt } from '../ai/prompts'
 import { waitForHumanTiming } from './engagementService'
 import { throttle } from '../core/rateLimiter'
 import { env } from '../config/env'
@@ -23,13 +25,13 @@ export async function replyToRandomTimelinePost() {
 
   const references = await resolveReplyReferences(target)
   const text = await generateReply(target.authorHandle || 'there')
-  const imageUrl = randomChance(env.IMAGE_CHANCE) ? pickRandomImageUrl() : undefined
+  const imageData = await generateImage(buildReplyImagePrompt(target.authorHandle || 'there', text))
 
-  // await replyToPost({
-  //   text,
-  //   ...references,
-  //   imageUrl
-  // })
+  await replyToPost({
+    text,
+    ...references,
+    imageData
+  })
 
-  logger.info({ uri: target.uri, cid: target.cid, text, imageUrl }, 'Reply posted to timeline post')
+  logger.info({ uri: target.uri, cid: target.cid, text, hasImage: !!imageData }, 'Reply posted to timeline post')
 }

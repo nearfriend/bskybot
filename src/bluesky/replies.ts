@@ -1,5 +1,4 @@
 import { agent } from './client'
-import { env } from '../config/env'
 import { logger } from '../core/logger'
 import { pickRandom } from '../utils/random'
 
@@ -15,7 +14,7 @@ export interface ReplyPayload {
   rootCid: string
   parentUri: string
   parentCid: string
-  imageUrl?: string
+  imageData?: Buffer
 }
 
 function isThreadViewPost(value: any): boolean {
@@ -72,18 +71,6 @@ export async function resolveReplyReferences(target: ReplyTarget) {
   }
 }
 
-async function uploadImage(url: string) {
-  const response = await fetch(url)
-  if (!response.ok) {
-    throw new Error(`Failed to fetch image: ${response.status}`)
-  }
-
-  const contentType = response.headers.get('content-type') || 'image/jpeg'
-  const buffer = Buffer.from(await response.arrayBuffer())
-  const result = await agent.uploadBlob(buffer, { encoding: contentType })
-  return result.data.blob
-}
-
 function buildImageEmbed(blob: any) {
   return {
     $type: 'app.bsky.embed.images',
@@ -112,21 +99,10 @@ export async function replyToPost(payload: ReplyPayload) {
     }
   }
 
-  if (payload.imageUrl && env.IMAGE_URLS.length) {
-    try {
-      const blob = await uploadImage(payload.imageUrl)
-      record.embed = buildImageEmbed(blob)
-    } catch (error) {
-      logger.warn({ err: error, imageUrl: payload.imageUrl }, 'Unable to attach image; posting text-only reply')
-    }
+  if (payload.imageData) {
+    const blob = await agent.uploadBlob(payload.imageData, { encoding: 'image/png' })
+    record.embed = buildImageEmbed(blob)
   }
 
   return agent.post(record)
-}
-
-export function pickRandomImageUrl() {
-  if (!env.IMAGE_URLS.length) {
-    return undefined
-  }
-  return pickRandom(env.IMAGE_URLS)
 }

@@ -1,8 +1,11 @@
-import { promises as fs } from 'fs'
-import path from 'path'
-import { MAX_POST_LENGTH } from '../config/constants'
+import { openai } from '../ai/openai'
+import { buildPostPrompt, buildReplyPrompt } from '../ai/prompts'
+import { defaultPostTopics, MAX_POST_LENGTH } from '../config/constants'
+import { env } from '../config/env'
 import { pickRandom } from '../utils/random'
 import { isTextSafe } from './moderationService'
+import { promises as fs } from 'fs'
+import path from 'path'
 
 type PostEntry = {
   title: string
@@ -22,17 +25,12 @@ function trimToLength(text: string, maxLength: number) {
 }
 
 async function loadPosts() {
-
-  console.log('cachedPosts', cachedPosts)
-  console.log('postsJsonPath', postsJsonPath)
   if (cachedPosts) {
     return cachedPosts
   }
 
   const file = await fs.readFile(postsJsonPath, 'utf-8')
   cachedPosts = JSON.parse(file) as PostEntry[]
-
-  console.log('Loaded posts from posts.json', { count: cachedPosts.length })
   return cachedPosts
 }
 
@@ -72,17 +70,55 @@ export async function generatePost() {
 
   const selected = pickRandom(unusedPosts)
   const text = `${selected.title}: ${selected.content}`
-  console.log('Generated post text', { text })
   const safe = await isTextSafe(text)
+  console.log("Post",{length: text.length})
   if (!safe) {
     throw new Error('Post content failed moderation checks')
   }
+
   postedSet.add(text)
   await savePostedPosts(postedSet)
 
   return trimToLength(text, MAX_POST_LENGTH)
 }
 
+export async function generatePostFromAI(topic?: string) {
+  const chosenTopic = topic || pickRandom(defaultPostTopics)
+  const completion = await openai.chat.completions.create({
+    model: env.OPENAI_MODEL,
+    messages: [
+      {
+        role: 'user',
+        content: buildPostPrompt(chosenTopic)
+      }
+    ]
+  })
+
+  const content = completion.choices[0].message?.content?.trim() || ''
+  const safe = await isTextSafe(content)
+  if (!safe) {
+    throw new Error('Generated post failed moderation checks')
+  }
+
+  return trimToLength(content, MAX_POST_LENGTH)
+}
+
 export async function generateReply(targetHandle: string) {
-  throw new Error('Reply generation is disabled for this bot')
+  const completion = await openai.chat.completions.create({
+    model: env.OPENAI_MODEL,
+    messages: [
+      {
+        role: 'user',
+        content: buildReplyPrompt(targetHandle)
+      }
+    ]
+  })
+
+  const content = completion.choices[0].message?.content?.trim() || ''
+  const safe = await isTextSafe(content)
+  if (!safe) {
+    throw new Error('Generated reply failed moderation checks')
+  }
+
+  return trimToLength(content, MAX_POST_LENGTH)
 }
