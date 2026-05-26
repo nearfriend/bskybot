@@ -1,4 +1,6 @@
+# Ignore environment files
+.env
+
+# Ignore Node.js dependencies
 node_modules/
 dist/
-.env
-.DS_Store
