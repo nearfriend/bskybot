@@ -30,7 +30,7 @@ export const env = {
   OPENAI_API_KEY: getRequiredEnv('OPENAI_API_KEY'),
   POST_CRON_SCHEDULE: process.env.POST_CRON_SCHEDULE || '0 */2 * * *',
   MENTION_CRON_SCHEDULE: process.env.MENTION_CRON_SCHEDULE || '*/5 * * * *',
-  FOLLOW_CRON_SCHEDULE: process.env.FOLLOW_CRON_SCHEDULE || '* * * * * sleep 30',
+  FOLLOW_CRON_SCHEDULE: process.env.FOLLOW_CRON_SCHEDULE || '*/1 * * * *',
   OPENAI_MODEL: process.env.OPENAI_MODEL || 'gpt-4o-mini',
   OPENAI_IMAGE_MODEL: process.env.OPENAI_IMAGE_MODEL || 'gpt-image-1',
   OPENAI_IMAGE_SIZE: process.env.OPENAI_IMAGE_SIZE || '1024x1024',
